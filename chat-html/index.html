@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bora Codar - CHAT - #04</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+</head>
+<body>
+
+  <div id="app">
+
+    <div id="chat">
+
+      <div id="heading">
+        <div class="top">
+          <div id="contact-data">
+          <img src="https://github.com/DarcioCarvalho.png" alt="Avatar do usuário">
+
+          <div class="info">
+            <h2>Dárcio Carvalho</h2>
+
+            <div class="status">
+              <div class="icon"></div>
+              <span>Online</span>
+            </div>
+          </div>
+          </div>
+
+          <i class="ph-x-bold" title="Fechar o chat" onclick="reloadPage()"></i>
+        </div>
+
+        <div class="bottom">Hoje 11:30</div>
+      </div>
+
+      <div id="calls-list">
+
+        <div id="call" class="contact">
+          <span class="caller">Dárcio - 11:30</span>
+
+          <div class="message">
+            Tive uma ideia incrível para um projeto! 😍
+          </div>
+        </div>
+      
+        <div id="call" class="you">
+          <span class="caller">Você - 11:32</span>
+
+          <div class="message">
+            Sério? Me conta mais.
+          </div>
+        </div>
+
+        <div id="call" class="contact">
+          <span class="caller">Dárcio - 11:34</span>
+
+          <div class="message">
+            E se a gente fizesse um chat moderno e responsivo em apenas uma semana?
+          </div>
+        </div>
+      
+        <div id="call" class="you">
+          <span class="caller">Você - 11:36</span>
+
+          <div class="message">
+            #boraCodar! 🚀
+          </div>
+        </div>
+
+      </div>
+
+      <div id="baseboard">
+        <div id="message-sender" onfocus="focusToInput()">
+          <input type="text" placeholder="Digite sua mensagem">
+          <i class="ph-paper-plane-right-fill" onclick="send()"></i>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
